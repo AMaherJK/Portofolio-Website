@@ -1,0 +1,113 @@
+body{
+    height: 100%;
+    background: blueviolet;
+    background: linear-gradient( 135deg, blueviolet 20%, orchid 60%, coral 100%); 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+.bgimg{
+    height:90%;
+    opacity:20%;
+    float:right; 
+    margin:5px; 
+    z-index: -1; 
+    top:100px; 
+    right:50px; 
+    position:fixed; 
+    rotate:7deg;
+}
+p{
+    color:white;
+    font-size:22pt
+}
+button{
+    background: linear-gradient(to right, coral 50%, blueviolet);
+    background-size: 300% auto;
+    background-position: 0%;
+    transition: background-position 0.5s ease-in-out, filter 0.3s ease-in-out;
+    color:white;
+    font-size:22pt; 
+    width:400px;
+    margin-right: 50px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+button:hover{
+    background-position: 100%;
+    cursor: pointer;   
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.166));
+
+}
+
+
+h1{
+    color: white;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.166));
+}
+h1:hover{
+    cursor:default
+}
+h1 span {
+    background: linear-gradient(to right, white 30%, orchid,coral);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.5s ease-in-out, filter 0.5s ease-in-out;
+    background-size: 300% auto;
+    background-position: 0%;
+    }
+h1 span:hover {
+    background-position: 100%;   
+    filter: drop-shadow(5px 5px 0px rgb(255, 255, 255));
+
+ }
+
+.navbar{
+    background-color: #8a2be2;
+    overflow: hidden; 
+    border-bottom: 3px solid white;  
+    width: 100%; height: 50px;
+    font-size: 16pt;
+}
+.tab{
+    color: white;
+    text-align: center;
+    float: left;
+    height: 50px;
+    width: 6%;
+    padding-top:10px;
+
+}
+.tab:hover {
+    background-color: white;
+    color: coral;
+    cursor: pointer;
+}
+.tab-active {
+    color: white;
+    background-color: coral;
+    text-align: center;
+    float: left;
+    height: 50px;
+    width: 6%;
+    text-decoration: none;
+    font-weight: 800;
+    padding-top:10px;
+
+}
+.tab-active {
+    cursor: pointer;
+}
+.contact-img {
+    height: 45px;
+    margin-right: 10px;
+  }
+  .contact-img-clickable {
+    height: 45px;
+    margin-right: 10px;
+  }
+  .contact-img-clickable:hover {
+    cursor: pointer;
+  }
+  .contact-clickable:hover{
+    cursor:pointer;
+  }
